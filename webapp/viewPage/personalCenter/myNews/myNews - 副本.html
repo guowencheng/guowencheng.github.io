@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="cache-control" content="max-age=0"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <title>我的消息</title>
+    <link rel="stylesheet" href="../../../assets/lib/normalize-css/normalize.css"/>
+    <link rel="stylesheet" href="../../../assets/lib/sweetalert2/dist/sweetalert2.css">
+    <!--<link rel="stylesheet" href="../../../assets/lib/layer/skin/layer.css"/>-->
+    <link rel="stylesheet" href="../../../assets/css/css.css"/>
+    <link rel="stylesheet" href="../../../assets/css/font2/iconfont.css"/>
+    <link rel="stylesheet" href="../../../assets/lib/swiper/dist/css/swiper.css"/>
+    <link rel="stylesheet" href="../../../assets/css/personalCenter/myNews/myNews.css"/>
+</head>
+<body>
+<div class="container body-content clearfix">
+    <!--<div class="loading" style="display: none;"><img src="../images/load.gif"></div>
+    <div class="developing">
+        <img src="../images/develop.png">
+        <p>开发中，敬请期待~~</p>
+    </div>
+    <div class="none-content">
+        <img src="../images/none.png">
+        <p>暂时没有内容~~</p>
+    </div>-->
+    <!--<div class="main_content">
+        <ul class="news-list">
+            <li>
+                <a href="./myNDetail.html">
+                    <div><span>测试学习中心公告</span><span class="iconfont pos-absolute">&#xe61d;</span></div>
+                    <div><span class="datetime">2016-08-04</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="./myNDetail.html">
+                    <div><span>转：北京大学继续教育学院关于2016年11月成人学士学位英语水平考试报名工作通知</span><span class="iconfont pos-absolute">&#xe61d;</span></div>
+                    <div><span class="datetime">2016-06-29</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="./myNDetail.html">
+                    <div><span>关于做好在校生新学期（2016年秋季）开学准备工作的通知</span><span class="iconfont pos-absolute">&#xe61d;</span></div>
+                    <div><span class="datetime">2016-06-29</span></div>
+                </a>
+            </li>
+        </ul>
+    </div>-->
+    <div class="box tab">
+        <div class="desc bluebtn">
+            <p class="item class-tit selected">班级通知</p>
+            <p class="item myNew-tit">我的消息</p>
+        </div>
+    </div>
+    <div class="tab-contents">
+        <div class="swiper-container swiper-container-horizontal">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-active aboutList">
+                    <!--<div class="tab-con class-scroll-wrapper">-->
+                    <!--<div class="init-loading">加载中...</div>-->
+                    <ul class="classNews-list">
+                            <!--<li>
+                                <a href="javascript:void(0);">
+                                    <div><span>班级通知：测试学习中心公告</span><span class="iconfont pos-absolute">&#xe61d;</span></div>
+                                    <div><span class="datetime">2016-08-04</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./myNDetail.html">
+                                    <div><span>转：北京大学继续教育学院关于2016年11月成人学士学位英语水平考试报名工作通知</span><span class="iconfont pos-absolute">&#xe61d;</span></div>
+                                    <div><span class="datetime">2016-06-29</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./myNDetail.html">
+                                    <div><span>关于做好在校生新学期（2016年秋季）开学准备工作的通知</span><span class="iconfont pos-absolute">&#xe61d;</span></div>
+                                    <div><span class="datetime">2016-06-29</span></div>
+                                </a>
+                            </li>-->
+                        </ul>
+                    <!--<div class="loadtip">上拉加载更多</div>-->
+                    <!--</div>-->
+                </div>
+                <div class="swiper-slide aboutList">
+                    <!--<div class="tab-con myNews-scroll-wrapper">-->
+                        <ul class="myNews-list">
+                            <!--<li>
+                                <a href="./myNDetail.html">
+                                    <div><span>我的消息：测试学习中心公告</span><span class="iconfont pos-absolute">&#xe61d;</span></div>
+                                    <div><span class="datetime">2016-08-04</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./myNDetail.html">
+                                    <div><span>转：北京大学继续教育学院关于2016年11月成人学士学位英语水平考试报名工作通知</span><span class="iconfont pos-absolute">&#xe61d;</span></div>
+                                    <div><span class="datetime">2016-06-29</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./myNDetail.html">
+                                    <div><span>关于做好在校生新学期（2016年秋季）开学准备工作的通知</span><span class="iconfont pos-absolute">&#xe61d;</span></div>
+                                    <div><span class="datetime">2016-06-29</span></div>
+                                </a>
+                            </li>-->
+                        </ul>
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script id="classNews-template" type="text/x-handlebars-template">
+    {{#each list}}
+    <li>
+        <a href="./classNDetail.html?id={{noticeId}}">
+            <!--<a href="javascript:void(0);" onclick="swal({
+                    title: '公告详情',
+                    html:$('<div>').addClass('content').text('{{content}}')
+                })">-->
+            <div><span>{{title}}</span><span class="iconfont pos-absolute">&#xe61d;</span></div>
+            <div><span class="datetime">{{createTime}}</span></div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<script id="myNews-template" type="text/x-handlebars-template">
+    {{#each list}}
+    <li>
+        <a href="./myNDetail.html?id={{id}}">
+            <div><span>发件人：{{fromuser}}</span><span class="iconfont pos-absolute">&#xe61d;</span></div>
+            <div><span class="datetime">{{createTime}}</span></div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<!--<script type="text/javascript" src="../../../assets/lib/jquery/jquery.min.js"></script>-->
+<script type="text/javascript" src="../../../assets/lib/zepto/zepto.min.js"></script>
+<script type="text/javascript" src="../../../assets/lib/iscroll/iscroll.js"></script>
+<script type="text/javascript" src="../../../assets/lib/handlebars/handlebars.js"></script>
+<script type="text/javascript" src="../../../assets/lib/sweetalert2/dist/sweetalert2.js"></script>
+<!--<script type="text/javascript" src="../../../assets/lib/js-cookie/src/js.cookie.js"></script>-->
+<!--<script type="text/javascript" src="../../../assets/lib/lodash/dist/lodash.min.js"></script>-->
+<!--<script type="text/javascript" src="../../../assets/lib/layer/layer.js"></script>-->
+<script src="../../../assets/lib/swiper/dist/js/swiper.js"></script>
+<script type="text/javascript" src="../../../assets/js/common.js"></script>
+<script type="text/javascript" src="../../../assets/js/common-api.js"></script>
+<script type="text/javascript" src="../../../assets/js/personalCenter/myNews/myNews.js"></script>
+
+<!--<script>
+      var _hmt = _hmt || []; (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?bb9f6e67a5018c4e341faf83badad794";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+       })();
+</script>-->
+<!--<script>-->
+<!--var LogChannelID= "100210";-->
+<!--</script>-->
+<!--<script src="http://pv.open.com.cn/datacollect.js"></script>-->
+<!--<script>
+    var data1 = {
+        "Success": true,
+        "Message": "",
+        "ErrCode": "",
+        "Data": [
+            {
+                "MESSAGEID": 321208.0,
+                "MSGSTYLENAME": "全部",
+                "TITLE": "测试学习中心公告",
+                "ISSUEDATE": "2016-08-04",
+                "ISLOOK": 1.0,
+                "ISTOP": 0.0,
+                "ISSHOWIMG": "0",
+                "type": "0",
+                "typeName": "学习中心"
+            },
+            {
+                "MESSAGEID": 320308.0,
+                "MSGSTYLENAME": "全部",
+                "TITLE": "转：北京大学继续教育学院关于2016年11月成人学士学位英语水平考试报名工作通知",
+                "ISSUEDATE": "2016-06-29",
+                "ISLOOK": 1.0,
+                "ISTOP": 0.0,
+                "ISSHOWIMG": "0",
+                "type": "1",
+                "typeName": "院校"
+            },
+            {
+                "MESSAGEID": 320307.0,
+                "MSGSTYLENAME": "全部",
+                "TITLE": "关于做好在校生新学期（2016年秋季）开学准备工作的通知",
+                "ISSUEDATE": "2016-06-29",
+                "ISLOOK": 1.0,
+                "ISTOP": 0.0,
+                "ISSHOWIMG": "0",
+                "type": "1",
+                "typeName": "院校"
+            }
+        ],
+        "StartTime": "2016/12/13 10:20:40.793",
+        "EndTime": "2016/12/13 10:20:40.855"
+    };
+</script>-->
+<!--<script id="noticeListTPLT" type="text/x-handlebars-template">
+    {{#each Data}}
+    <li>
+        <a href="../importantNotice/Detail.html" onclick="common.href('/ImportantNotice/Detail',[['iMessageID',{{MESSAGEID}}]],1)">
+            {{TITLE}}
+            <br>
+            <span class="datetime">{{ISSUEDATE}}</span>
+        </a>
+    </li>
+    {{/each}}
+</script>-->
+</body>
+</html>

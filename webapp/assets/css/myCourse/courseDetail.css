@@ -1,0 +1,84 @@
+/**
+ 20170626
+*/
+.myCourae-item {
+    width: 100%;
+    height: 2.6rem;
+    margin-bottom: .3rem;
+}
+
+.myCourae-item .mcItem-left {
+    top: .3rem;
+    left: .3rem;
+
+}
+
+.myCourae-item .mcItem-left a {
+    display: block;
+}
+.myCourae-item .mcItem-left a img {
+    width: 1.5rem;
+}
+
+.myCourae-item .mcItem-right {
+    top: .45rem;
+    left: 2rem;
+}
+
+.myCourae-item .mcItem-right h3.mcItem-title {
+    color: #5F5F5F;
+    font-size: .30rem;
+    margin-bottom: .2rem;
+}
+
+.myCourae-item .mcItem-right .mcItem-info {
+    color: #5F5F5F;
+    font-size: .22rem;
+}
+.myCourae-item .mcItem-right .mcItem-info p {
+    padding-left: .2rem;
+    margin-bottom: .1rem;
+}
+
+.myCourae-item .mcItem-button a {
+    display: block;
+    width: 1.2rem;
+    height: .45rem;
+    line-height: .45rem;
+    margin:.2rem 2rem;
+    color: #FFFFFF;
+    font-size: .23rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #2DA9FF;
+}
+
+.courseDetail-unit {
+    width: 100%;
+    font-size: .24rem;
+}
+.courseDetail-unit li {
+     width: 100%;
+     height: .9rem;
+     line-height: .9rem;
+     margin-bottom: .1rem;
+}
+.courseDetail-unit li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #5F5F5F;
+}
+.courseDetail-unit li span:first-child {
+    left: .5rem;
+}
+.courseDetail-unit li span:nth-child(2) {
+    left: 1rem;
+}
+.courseDetail-unit li span:last-child {
+    right: 3%;
+}
+
+.noLocked {
+    color: #2DA9FF;
+}

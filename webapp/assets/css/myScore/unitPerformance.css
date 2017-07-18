@@ -1,0 +1,99 @@
+/**
+unitPerformance
+ */
+
+@charset "utf-8";
+
+.brand-list {
+	width: 100%;
+}
+
+div.score-section {
+	width: 100%;
+	margin-bottom: 0.12rem;
+	color: #5F5F5F;
+	font-size: .32rem;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+div.score-section a.end {
+	color: #2DA9FF;
+}
+div.brand-name {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: .9rem;
+	padding: .3rem 0;
+	line-height: .26rem;
+}
+div.brand-name a {
+	display: block;
+	width: 100%;
+	height: .9rem;
+}
+
+div.brand-name span:first-child{
+	left: .5rem;
+	top: .3rem;
+	width: .32rem;
+	height: .32rem;
+	background-image: url("../../images/myScore/iconGather.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: -1.1rem -.55rem;
+	background-size: 3rem 3rem;
+}
+
+div.brand-name span.score-view{
+	background-position: -1.64rem -2px;
+	background-size: 3rem 3rem;
+}
+div.brand-name span.score-write{
+	background-position: -2.2rem 0;
+	background-size: 3rem 3rem;
+}
+
+div.brand-name span:nth-child(2) {
+	left: .9rem;
+}
+
+div.brand-name span:last-child {
+	transition: all ease .5s;
+	right: .2rem;
+	color: #E9E9E9;
+}
+
+
+ul.brand-model {
+	width: 92%;
+    padding: 0 4%.12rem 4%;
+}
+
+ul.brand-model li {
+	float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	width: 20%;
+    padding: .2rem 10%;
+}
+ul.brand-model li a {
+	display: block;
+	width: .7rem;
+	height: .7rem;
+    margin-left: -.3rem;
+    line-height: .7rem;
+	color: #D5D5D5;
+    text-align: center;
+    border-radius: 50%;
+    background: #f6f6f6;
+	border: 1px solid #ccc;
+}
+ul.brand-model li a:hover {
+    background: #88ff00;
+}
+
+
+

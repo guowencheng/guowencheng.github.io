@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="cache-control" content="max-age=0"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <title>笔记列表</title>
+	<link rel="stylesheet" href="../../assets/css/css.css"/>
+    <link rel="stylesheet" href="../../assets/lib/normalize-css/normalize.css"/>
+	<link rel="stylesheet" href="../../assets/lib/sweetalert2/dist/sweetalert2.min.css">
+    <!--<link rel="stylesheet" href="../../assets/css/font1/font_fh14lmlq7g69lik9/iconfont.css" />-->
+    <link rel="stylesheet" href="../../assets/css/font2/iconfont.css" />
+    <!--<link rel="stylesheet" href="../../assets/lib/swiper/dist/css/swiper.css" />-->
+    <!--<link rel="stylesheet" href="../../assets/css/home/main.css" />-->
+    <!--<link rel="stylesheet" href="../../assets/css/mainWX.css" />-->
+    <link rel="stylesheet" href="../../assets/css/nodeQuestion/noteList.css" />
+</head>
+<body>
+	<div class="container body-content clearfix">
+		<section class="brand-list" id="brand-list">
+			<!--<div class="node-section white">
+				<div class="brand-name pos-relative">
+					<span>Unit1</span>
+					<span class="iconfont pos-absolute">&#xe610;</span>
+				</div>
+				<ul class="brand-model pos-relative hide">
+					<li>
+						<div class="brand-desc">
+							<span>5/10</span>
+							<span>Say it right</span>
+							<span class="pos-absolute">2016.12.01 19:30</span>
+						</div>
+						<div class="content">
+							<div>视频重点内容：</div>
+							<p>guess what ! 告诉你一个好消息</p>
+							<p>in a few weeks 几个星期后</p>
+							<p>daycare center 托儿所</p>
+							<p>TA 助教</p>
+							<p>administrator 管理者</p>
+							<p>program coordinato 项目协调者</p>
+							<p>program coordinato 项目协调者</p>
+						</div>
+						<div class="con-footer pos-relative">
+							<div class="pos-absolute" id="con-more">全部展开</div>
+						</div>
+					</li>
+					<li>
+						<div class="brand-desc">
+							<span>5/10</span>
+							<span>Say it right</span>
+							<span class="pos-absolute">2016.12.01 19:30</span>
+						</div>
+						<div class="content">
+							<div>视频重点内容：</div>
+							<p>guess what ! 告诉你一个好消息</p>
+							<p>in a few weeks 几个星期后</p>
+							<p>daycare center 托儿所</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="node-section white">
+				<div class="brand-name pos-relative">
+					<span>Unit2</span>
+					<span class="iconfont pos-absolute">&#xe610;</span>
+				</div>
+				<ul class="brand-model pos-relative hide">
+					<li>
+						<div class="brand-desc">
+							<span>5/12</span>
+							<span>Say it right</span>
+							<span class="pos-absolute">2016.12.01 19:30</span>
+						</div>
+						<div class="content">
+							<div>视频重点内容：</div>
+							<p>guess what ! 告诉你一个好消息</p>
+							<p>in a few weeks 几个星期后</p>
+							<p>daycare center 托儿所</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="node-section white">
+				<div class="brand-name pos-relative">
+					<span>Unit3</span>
+					<span class="iconfont pos-absolute">&#xe610;</span>
+				</div>
+				<ul class="brand-model pos-relative hide">
+					<li>
+						<div class="brand-desc">
+							<span>5/12</span>
+							<span>Say it right</span>
+							<span class="pos-absolute">2016.12.01 19:30</span>
+						</div>
+						<div class="content">
+							<div>视频重点内容：</div>
+							<p>guess what ! 告诉你一个好消息</p>
+							<p>in a few weeks 几个星期后</p>
+							<p>daycare center 托儿所</p>
+						</div>
+					</li>
+				</ul>
+			</div>-->
+		</section>
+	</div>
+
+	<script type="text/javascript" src="../../assets/lib/zepto/zepto.js"></script>
+	<!--<script type="text/javascript" src="../../assets/lib/jquery/jquery.min.js"></script>-->
+	<script type="text/javascript" src="../../assets/lib/handlebars/handlebars.js"></script>
+	<script type="text/javascript" src="../../assets/lib/sweetalert2/dist/sweetalert2.js"></script>
+	<!--<script type="text/javascript" src="../lib/js-cookie/src/js.cookie.js"></script>-->
+	<script type="text/javascript" src="../../assets/lib/lodash/dist/lodash.min.js"></script>
+	<!--<script type="text/javascript" src="../../assets/lib/layer/layer.js"></script>-->
+	<!--<script src="../../assets/lib/swiper/dist/js/swiper.js"></script>-->
+	<script type="text/javascript" src="../../assets/js/common.js"></script>
+	<script type="text/javascript" src="../../assets/js/common-api.js"></script>
+	<!--<script src="../../assets/lib/jquery/jquery.min.js"></script>-->
+	<script type="text/javascript" src="../../assets/js/nodeQuestion/noteList.js"></script>
+	<script id="nodeList-template" type="text/x-handlebars-template">
+		{{#each result}}
+		<div class="node-section white">
+			<div class="brand-name pos-relative">
+				<span>{{unit}}</span>
+				<span class="iconfont pos-absolute">&#xe610;</span>
+			</div>
+			<ul class="brand-model pos-relative hide" id="brand-model">
+				{{#each item}}
+				<li>
+					<div class="brand-desc">
+						<span>{{location}}</span>
+						<span>{{name}}</span>
+						<span class="pos-absolute">{{createTime}}</span>
+					</div>
+					<div class="content">
+						<div class="node-tit">视频重点内容：</div>
+						<div class="node-cli">
+							<p id="node-con">{{content}}</p>
+						</div>
+					</div>
+					<div class="con-footer pos-relative">
+						<div class="pos-absolute" id="con-more">全部展开</div>
+					</div>
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+		{{/each}}
+	</script>
+	<!--<script>
+		$(function(){
+			$("#brand-list .brand-name").tap(function(){
+			    if($.mySlideFlag){
+                    $(this).find("span:last-child").toggleClass("transform180");
+				}
+				$(this).next().slideToggle("slow");
+			});
+			/*$("#btn").click(function(){
+				$(".content-more").show();
+				$(this).parent().hide();
+			});*/
+		});
+	</script>-->
+</body>
+</html>

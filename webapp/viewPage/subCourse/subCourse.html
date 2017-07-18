@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="cache-control" content="max-age=0"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <title>我的约课</title>
+    <!--<link rel="stylesheet" href="../../assets/lib/sweetalert/css/sweet.css" />-->
+    <link rel="stylesheet" href="../../assets/lib/normalize-css/normalize.css"/>
+    <link rel="stylesheet" href="../../assets/lib/sweetalert2/dist/sweetalert2.css">
+    <link rel="stylesheet" href="../../assets/css/css.css"/>
+    <!--<link rel="stylesheet" href="../../assets/css/font1/font_fh14lmlq7g69lik9/iconfont.css" />-->
+    <link rel="stylesheet" href="../../assets/lib/swiper/dist/css/swiper.css" />
+    <!--<link rel="stylesheet" href="../../assets/css/home/main.css" />-->
+    <!--<link rel="stylesheet" href="../../assets/css/font2/iconfont.css" />-->
+    <!--<link rel="stylesheet" href="../../assets/css/mainWX.css" />-->
+    <link rel="stylesheet" href="../../assets/css/subCourse/subCourse.css" />
+</head>
+<body>
+<div class="container body-content clearfix">
+    <div class="box tab">
+        <div class="desc bluebtn">
+            <p class="item selected">可约课程</p>
+            <p class="item">已约课程</p>
+        </div>
+    </div>
+    <div class="tab-contents">
+    <div class="swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-active aboutList">
+                <ul id="noSub">
+                    <!--<li class="white">
+                        <div>
+                            <div class="img"><a href="javaScript:void(0);"><img src="../../assets/images/teacher.jpg"></a></div>
+                            <div><span>黄欢老师</span></div>
+                        </div>
+                        <div class="desc-right">
+                            <div><span>视听说1级1-5单元难点解析</span></div>
+                            <div><span>开课时间：</span><span>2017-04-05   9:00</span></div>
+                            <div><span>报名截止：</span><span>2017-04-04</span></div>
+                            <div><span>上课地点：</span><span>实训楼507</span></div>
+                            <div class="btn">
+                                <a href="subCourseDesc.html">查看详情</a>
+                                &lt;!&ndash;<a href="javaScript:void(0);" onclick="layer.alert('您已成功预约此课程')">预约此课</a>&ndash;&gt;
+                                <a href="javaScript:void(0);" id="war">预约此课</a>
+                            </div>
+                        </div>
+                    </li>-->
+                </ul>
+            </div>
+            <div class="swiper-slide aboutList">
+                <ul id="alSub">
+                    <!--<li class="white">
+                        <div>
+                            <div class="img"><a href="javaScript:void(0);"><img src="../../assets/images/teacher.jpg"></a></div>
+                            <div><span>黄欢老师</span></div>
+                        </div>
+                        <div class="desc-right">
+                            <div><span>视听说1级1-5单元难点解析</span></div>
+                            <div><span>开课时间：</span><span>2017-04-05   9:00</span></div>
+                            <div><span>报名截止：</span><span>2017-04-04</span></div>
+                            <div><span>上课地点：</span><span>实训楼507</span></div>
+                            <div class="btn">
+                                <a href="subCourseDesc.html">查看详情</a>
+                                &lt;!&ndash;<a href="javaScript:void(0);" onclick="layer.alert('您已成功取消预约此课程')">取消预约</a>&ndash;&gt;
+                                <a href="javaScript:void(0);" id="war">取消预约</a>
+                            </div>
+                        </div>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script id="noSub-template" type="text/x-handlebars-template">
+    {{#each items}}
+    <li class="white">
+        <div>
+            <div class="img"><a href="javaScript:void(0);"><img src="../..{{teacherFace}}" onerror="this.src='../../assets/styles/images/head.png'"></a></div>
+            <div><span>{{teacher}}</span></div>
+
+        </div>
+        <div class="desc-right">
+            <div><span>{{name}}</span></div>
+            <div><span>开课时间：</span><span>{{beginLeanTime}}</span></div>
+            <div><span>报名截止：</span><span>{{endTime}}</span></div>
+            <div><span>上课地点：</span><span>{{address}}</span></div>
+            <div class="btn can_btn">
+                <a href="subCourseDesc.html?id={{id}}" >查看详情</a>
+                <a href="javaScript:void(0);" class="canSubBtn" subdata-id="{{id}}">预约此课</a>
+
+                <!--<div class="canSubBtn">
+                    nihao <br>
+                    nihao <br>
+                    nihao <br>
+                </div>-->
+                <!--<button id="canSubBtn">预约此课</button>-->
+                <!--<a href="javaScript:void(0);" id="canSubBtn" onclick="swal(
+                    '','您已成功预约此课','success'
+                )">预约此课</a>-->
+                <!--onclick="alert('{{id}}')"-->
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</script>
+
+<script id="alSub-template" type="text/x-handlebars-template">
+    {{#each items}}
+    <li class="white">
+        <div>
+            <div class="img"><a href="javaScript:void(0);"><img src="../..{{teacherFace}}" onerror="this.src='../../assets/styles/images/head.png'"></a></div>
+            <div><span>{{teacher}}</span></div>
+        </div>
+        <div class="desc-right">
+            <div><span>{{name}}</span></div>
+            <div><span>开课时间：</span><span>{{beginLeanTime}}</span></div>
+            <div><span>报名截止：</span><span>{{endTime}}</span></div>
+            <div><span>上课地点：</span><span>{{address}}</span></div>
+            <div class="btn cancel_btn">
+                <a href="cancelCourseDesc.html?id={{id}}" >查看详情</a>
+                <a href="javaScript:void(0);" class="cancelBtn" canceldata-id="{{id}}">取消预约</a>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</script>
+
+<!--<script type="text/javascript" src="../../assets/lib/sweetalert/lib/sweetalert.js"></script>-->
+<!--<script type="text/javascript" src="../../assets/lib/jquery/jquery.min.js"></script>-->
+<script type="text/javascript" src="../../assets/lib/zepto/zepto.min.js"></script>
+<script type="text/javascript" src="../../assets/lib/handlebars/handlebars.js"></script>
+<script type="text/javascript" src="../../assets/lib/swiper/dist/js/swiper.js"></script>
+<!--<script type="text/javascript" src="../../assets/lib/iscroll/iscroll.js"></script>-->
+<script type="text/javascript" src="../../assets/lib/sweetalert2/dist/sweetalert2.js"></script>
+<!--<script type="text/javascript" src="../../assets/lib/js-cookie/src/js.cookie.js"></script>-->
+<script type="text/javascript" src="../../assets/lib/lodash/dist/lodash.min.js"></script>
+<!--<script type="text/javascript" src="../../assets/lib/layer/layer.js"></script>-->
+<script type="text/javascript" src="../../assets/js/common.js"></script>
+<script type="text/javascript" src="../../assets/js/common-api.js"></script>
+<script type="text/javascript" src="../../assets/js/subCourse/subCourse.js"></script>
+
+<!--<script>
+    $(function(){
+        //tab标签切换
+        var swiper = new Swiper('.swiper-container', {
+            onSlideChangeStart: function () {
+                $(".tab .item").removeClass("selected");
+                $(".tab .item").eq(swiper.activeIndex).addClass("selected");
+            }
+        });
+        $(".tab .item").click(function (event) {
+            $(".tab .item").removeClass("selected");
+            $(this).addClass("selected");
+            var _index = $(this).index();
+            swiper.slideTo(_index)
+        });
+//        模拟数据
+//        var data = {
+//            "noSubText":[
+//                {
+//                    "teacher": "教师1",
+//                    "name": "主体1",
+//                    "beginLeanTime": "2017/06/24 01:14:00",
+//                    "endTime": "2017/06/16 01:14:00",
+//                    "address": "地点3"
+//                },{
+//                    "teacher": "教师2",
+//                    "name": "主体2",
+//                    "beginLeanTime": "2018/06/24 01:14:00",
+//                    "endTime": "2018/06/16 01:14:00",
+//                    "address": "地点3"
+//                }
+//            ]
+//        }
+//        可预约ajax请求
+        var noSubPage = {
+            noSubView: function () {
+                common.post("/subscribeClass/noSubscribeClassInfoFind", null, function (data) {
+                    console.log(data);
+                    if (data.status === '200') {
+                         var noSubTemplate = Handlebars.compile($("#noSub-template").html());
+                         var renderHTML = data;
+                         $('#noSub').html(noSubTemplate(renderHTML));
+                     }
+                })
+            }
+        };
+        noSubPage.noSubView();
+
+//        已预约ajax请求
+        var alSubPage = {
+            alSubView: function () {
+                common.post("/subscribeClass/alSubscribeClassInfoFind", null, function (data) {
+                    console.log(data);
+                    if (data.status === '200') {
+                        var alSubTemplate = Handlebars.compile($("#alSub-template").html());
+                        var renderHTML = data;
+                        $('#alSub').html(alSubTemplate(renderHTML));
+                    }
+                })
+            }
+        };
+        alSubPage.alSubView();
+//        $("#war").click(function(){
+//            layer.alert('您已成功预约此课程',function(){
+//                window.location.href="../AboutTheclass/index.html";
+//            });
+//
+//        })
+        //        预约此课ajax请求
+        var canSubPage = {
+            canSubView: function () {
+                common.post("/subscribeClass/subscribeCourse", {Integer:'int',subscribeClassId:17}, function (data) {
+                    console.log(data);
+                })
+            }
+        };
+        canSubPage.canSubView();
+
+        //        可预约ajax请求
+        var noSubPage = {
+            noSubView: function () {
+                common.post("/subscribeClass/noSubscribeClassInfoFind", null, function (data) {
+                    console.log(data);
+                    if (data.status === '200') {
+                        var noSubTemplate = Handlebars.compile($("#noSub-template").html());
+                        var renderHTML = data;
+                        $('#noSub').html(noSubTemplate(renderHTML));
+                    }
+                })
+            }
+        };
+        noSubPage.noSubView();
+    });
+
+</script>-->
+</body>
+</html>
