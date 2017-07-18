@@ -55,6 +55,6 @@ var courseDetail = {
     }
 }
 $(function () {
-    courseDetail.init();
-    // courseDetail.homeViewSuccess(courseDetailData.payload)
+    // courseDetail.init();
+    courseDetail.homeViewSuccess(courseDetailData.payload)
 });

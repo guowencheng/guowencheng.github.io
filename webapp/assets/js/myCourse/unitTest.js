@@ -741,11 +741,11 @@ var DetailedComprehension = {
 $(function () {
     // studyMenu.init();
     // unitTest.pageView(studyGolasData.payload);
-    // unitTest.pageViewSuccess(listeningChoiceData.payload);
+    unitTest.pageViewSuccess(listeningChoiceData.payload);
     // unitTest.pageViewSuccess(moreListeningData.payload);
     // unitTest.pageViewSuccess(reviewData.payload);
     // listeningChoice.pageViewHandler(listeningChoiceData.payload);
-    unitTest.pageView();
+    // unitTest.pageView();
     
 });
 

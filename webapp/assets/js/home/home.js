@@ -149,7 +149,7 @@ var home = {
         // banner 图部分
         home.bannerSuccess(homeBannerData);
         // 最新进度
-        common.post("/Course/getUserLastCourseInfo", null, home.progressSuccess, home.error);
+        // common.post("/Course/getUserLastCourseInfo", null, home.progressSuccess, home.error);
     }
 };
 
