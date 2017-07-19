@@ -2,11 +2,11 @@
  20170626
 */
 .myCourae{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
     width: 100%;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 .myCourae-item {
     width: 100%;
