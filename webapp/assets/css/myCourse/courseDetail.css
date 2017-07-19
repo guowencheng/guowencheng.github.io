@@ -1,6 +1,13 @@
 /**
  20170626
 */
+.course-detail {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+}
 .myCourae-item {
     width: 100%;
     height: 2.6rem;
