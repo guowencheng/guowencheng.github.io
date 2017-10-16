@@ -14,6 +14,7 @@ select {
     appearance:none;
     outline-style: none;
     border: none;
+    padding: 0.1rem 0;
     /* background-color: #fff;   */
 }
 .my_select {
@@ -24,8 +25,9 @@ select {
     appearance:none;
     outline-style: none;
     border: none;
-    /* background-color: #fff; */
+    /* background-color: #fff;   */
 }
+
 select::-ms-expand { 
     display: none; 
 }
@@ -59,6 +61,11 @@ input {
     -webkit-box-flex: 3;
     -ms-flex: 3;
     flex: 3;
+}
+.fx_4 {
+    -webkit-box-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
 }
 .fx_ver{
     -webkit-flex-direction: row-reverse;
@@ -156,6 +163,7 @@ input {
 .bor_top {
     border-top: 1px solid #ececec;
 }
+
 .bor_top2 {
     border-top: 2px solid #51b4b2;
 }
@@ -198,7 +206,7 @@ input {
 }
 .form_Rlabel {
     display: inline-block;
-    top: 0.36rem;
+    top: 0.1rem;
     right: 0;
     width: 0.12rem;
     height: 0.28rem;
@@ -257,8 +265,7 @@ body {
 }
 
 .filling_Info .FI_main {
-    width: 100%;
-    /* line-height: 1rem; */
+    width: 100%;    
 }
 .FI_person_info input {
     color: #bbbbbb;
@@ -267,16 +274,15 @@ body {
     outline-style: none;
 }
 .FI_person_info h2,
-.FI_person_info ul li {
-    /* height: 1rem; */
+.FI_person_info ul li {    
     height: auto;
     padding-top: 0.3rem;
-    padding-bottom: 0.6rem;
+    padding-bottom: 0.25rem;
 }
 .FI_person_info h2 span:first-child{
     display: inline-block;
     left:3%;
-    top: 0.36rem;
+    top: 0.46rem;
     width: 0.1rem;
     height: 0.36rem;
     background-color: #5488cf;
@@ -286,7 +292,7 @@ body {
     margin-left: 3%;
 }
 .FI_person_info .select_icon {
-    padding: 0 0.3rem;
+    padding: 0.06rem 0.3rem;
 }
 .explan {
     height: 0.6rem;
