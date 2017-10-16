@@ -1,0 +1,439 @@
+/*rebase*/
+ul, ol, li, h1, h2, h3, h4, h5, h6, span, p, select{
+    margin: 0;
+    padding: 0;
+}
+ul, ol, li {
+    list-style-type: none;
+}
+select {
+    /* -webkit-tap-highlight-color: rgba(255, 255, 255,0); */
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline-style: none;
+    border: none;
+    /* background-color: #fff;   */
+}
+.my_select {
+    /* -webkit-tap-highlight-color: rgba(255, 255, 255,0); */
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline-style: none;
+    border: none;
+    /* background-color: #fff; */
+}
+select::-ms-expand { 
+    display: none; 
+}
+.my_select::-ms-expand { 
+    display: none; 
+}
+
+input {
+    color: #000;
+}
+/**/
+/*
+工具类 start
+*/
+.fx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.fx_1 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.fx_2 {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+.fx_3 {
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+}
+.fx_ver{
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+.fx_col {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.fx_row {
+    -webkit-flex-direction: row !important;
+    flex-direction: row !important;
+}
+.fx_bt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+/*垂直居中*/
+.fx_ac {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/*水平/主轴居中*/
+.fx_jc {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-justify-content: center; /* Safari 6.1+ */
+    justify-content: center;
+}
+/*操作弹性元素*/
+.fx_as {
+    -webkit-align-self: center;
+    align-self: center;
+}
+.fx_ad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.fx_end {
+    align-items: flex-end;
+}
+.fx_wrap{
+    flex-wrap:wrap;
+}
+.pos_fixed {
+   position: fixed;
+}
+.pos_rel {
+    position: relative;
+}
+.pos_abs {
+    position: absolute;
+}
+.right_6 {
+    right: 6%;
+}
+.left_3 {
+    left: 3%;
+}
+.left_6 {
+    left: 6%;
+}
+.bor_size {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.bor_size_p3 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 3%;
+}
+.txt_c {
+    text-align: center;
+}
+.txt_r {
+    text-align: right;
+}
+.bg_wh {
+    background-color: #ffffff;
+}
+.bg_f1 {
+    background-color: #f1fafa;
+}
+.bor_top {
+    border-top: 1px solid #ececec;
+}
+.bor_top2 {
+    border-top: 2px solid #51b4b2;
+}
+.bor_left2 {
+    border-left: 2px solid #a6a6a6;
+}
+.bor_bottom {
+     border-bottom: 1px solid #ececec;
+}
+.bor_bot2_c8 {
+    border-bottom: 2px solid #c8c8c8;
+}
+.bor_none {
+    border: none;
+}
+.font28{
+    font-size: 0.28rem;
+}
+.font24{
+    font-size: 0.24rem;
+}
+.font32{
+    font-size: 0.32rem;
+}
+.middle_space {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #f6f6f9;
+}
+.margin_r3 {
+    margin-right: 0.3rem;
+}
+.top_arrowL {
+    display: inline-block;
+    left: 3%;
+    top: 0.2rem;
+    width: 0.3rem;
+    height: 0.4rem;
+    background: url("../images/icon/back.png") no-repeat center/cover;
+}
+.form_Rlabel {
+    display: inline-block;
+    top: 0.36rem;
+    right: 0;
+    width: 0.12rem;
+    height: 0.28rem;
+    transition: all 0.3s;
+}
+.bg_arrowR {
+    background: url("../images/icon/more.png") no-repeat center/cover;
+}
+.bg_redstar {
+    display: inline-block;
+    top: 0.4rem;
+    right: 0;
+    width: 0.2rem;
+    height: 0.2rem;
+    background: url("../images/icon/redstar.png") no-repeat center/cover;
+}
+.color6b {
+    color: #6b6b6b;
+}
+.overHidden {
+    overflow: hidden;
+}
+.over_XH {
+    overflow-x: hidden;
+}
+.trans90 {
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+}
+/*
+工具类 end
+*/
+body,html{
+    width: 100%;
+}
+body {
+    color: #000000;
+    font: 400 0.28rem 'microsoft yehei';
+    background-color: #f6f6f9;
+}
+.container {
+    width: 100%;
+    max-width: 750px;
+    padding-bottom: 1.2rem;
+}
+/*投保人信息页面  start*/
+.filling_Info .FI_top {
+    height: 0.9rem;
+    line-height: 0.9rem;
+    font-size: 0.34rem;
+    color: #ffffff;
+    background-color: #3289cb;
+}
+
+.filling_Info .FI_main {
+    width: 100%;
+    line-height: 1rem;
+}
+.FI_person_info input {
+    color: #bbbbbb;
+    text-align: right;
+    border: none;
+    outline-style: none;
+}
+.FI_person_info h2,
+.FI_person_info ul li {
+    height: 1rem;
+}
+.FI_person_info h2 span:first-child{
+    display: inline-block;
+    left:3%;
+    top: 0.36rem;
+    width: 0.1rem;
+    height: 0.36rem;
+    background-color: #5488cf;
+}
+.FI_person_info h2 span:last-child{
+    font-size: 0.34rem;
+    margin-left: 3%;
+}
+.FI_person_info .select_icon {
+    padding: 0 0.3rem;
+}
+.explan {
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.24rem;
+    color: #f1b48e;
+    text-indent: 6%;
+    background-color: #F6F6F9;
+}
+
+.load_form {
+    height: 1rem;
+    text-indent: 0.8rem;
+}
+
+/*按钮*/
+
+.check_dot {
+    display: inline-block;
+    top: 0.3rem;
+    width: 0.3rem;
+    height:0.3rem;
+    border-radius: 50%;
+    border: 2px solid #d0d0d0;
+}
+.button_sub {
+    width: 96%;
+    height: 1rem;
+    margin: 0.5rem auto;
+    color: #ffffff;
+    font-size: 0.36rem;
+    background-color: #3289CB;
+    border-radius: 5px;
+}
+
+.check_load{
+    background: url("../images/icon/select.png") no-repeat center/cover;
+}
+
+/*投保人信息页面  end*/
+
+/* 百万医疗保险页面 start ---MHI  */
+.MHI_topSwiper {
+    width: 100%;
+}
+.MHI_topSwiper .MHI_tsItem {
+    width: 100%;
+    height: 3.28rem;
+}
+.MHI_tsItem img{
+    width: 100%;
+    height: 100%;
+}
+.MHI_main {
+    width: 100%;
+}
+.MHI_tabs {
+    padding: 0.38rem;
+    color: #6c7272;
+    border-bottom: 2px solid #c5c8c8;
+}
+.MHI_tabs .active {
+    color: #55b712;
+}
+
+.MHI_productDetail img {
+    width: 100%;
+}
+.MHI_SPtype {
+   padding: 0.3rem 0;
+}
+.MHI_SPtype span:first-child {
+    font-size: 0.32rem;
+    color: #484848;
+}
+.MHI_SPexplain {
+    padding: 0.3rem 0;
+    color: #adadad;
+    font-size: 0.24rem;
+}
+.MHI_SPtype .select_icon {
+   padding-right: 0.34rem;
+    font-size: 0.32rem;
+    color: #adadad;
+}
+.MHI_SPtype .form_Rlabel {
+    margin-top: -0.26rem;
+}
+/* 服务 */
+.MHI_Ftitle {
+    padding: 0.22rem;
+    color: #737373;
+    background-color: #fafafa;
+}
+.MHI_Fexplain p{
+    padding: 0.2rem 3%;
+    color: #737373;
+    line-height: 0.36rem;
+}
+.MHI_Fexplain .reference {
+    font-size: 0.3rem;
+    color: #437284;
+}
+.MHI_Fimg img {
+    width: 100%;
+}
+.MHI_file {
+    font-size: 0.24rem;
+    color: #737373;
+    line-height: 0.36rem;
+}
+.MHI_FLtitle {
+    padding: 0.26rem 0;
+    font-size: 0.3rem;
+    color: #437284;
+}
+.MHI_FLcontent .employee {
+   color: #437284;
+}
+.MHI_Qtitle {
+    padding: 0.22rem;
+    color: #737373;
+    background-color: #fafafa;
+}
+.MHI_Qitems {
+    padding: 0.4rem 3%;
+}
+.MHI_Qitem {
+    margin-bottom: 0.34rem;
+    line-height: 0.36rem;
+    color: #737373;
+}
+.MHI_QItitle {
+    margin-bottom: 0.2rem;
+    color: #437284;
+}
+.buton_bottom {
+    bottom: 0;
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    color: #fff;
+    background: #3289CB;
+    z-index: 99999;
+
+}
+.buton_bottom .tottolPay {
+    background: #505050;
+}
+#tottolPay {
+    color: #EFA479;
+}
+/* 百万医疗保险页面 end   */
