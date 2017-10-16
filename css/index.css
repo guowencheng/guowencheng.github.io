@@ -258,7 +258,7 @@ body {
 
 .filling_Info .FI_main {
     width: 100%;
-    line-height: 1rem;
+    /* line-height: 1rem; */
 }
 .FI_person_info input {
     color: #bbbbbb;
@@ -268,7 +268,10 @@ body {
 }
 .FI_person_info h2,
 .FI_person_info ul li {
-    height: 1rem;
+    /* height: 1rem; */
+    height: auto;
+    padding-top: 0.3rem;
+    padding-bottom: 0.6rem;
 }
 .FI_person_info h2 span:first-child{
     display: inline-block;
