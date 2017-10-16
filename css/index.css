@@ -137,6 +137,9 @@ input {
 .left_6 {
     left: 6%;
 }
+.pad_t1 {
+    padding-top: 0.1rem; 
+}
 .bor_size {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -381,7 +384,7 @@ body {
     color: #adadad;
 }
 .MHI_SPtype .form_Rlabel {
-    margin-top: -0.26rem;
+    margin-top: 0.1rem;
 }
 /* 服务 */
 .MHI_Ftitle {
