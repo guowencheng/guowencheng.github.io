@@ -12,8 +12,12 @@ var perINfo = {
         });
         // 选择证件类型的 箭头特效
         $(".select_icon").on("click",function () {
+            $(this).next(".form_Rlabel").toggleClass("trans90");            
+            return false;
+        });
+        $(".select_icon").on("blur",function () {
             $(this).next(".form_Rlabel").toggleClass("trans90");
-        }); 
+        });          
     },
     init: function () {
         this.clickEvens();

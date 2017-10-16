@@ -322,6 +322,7 @@ body {
 .button_sub {
     width: 96%;
     height: 1rem;
+    line-height: 1rem;
     margin: 0.5rem auto;
     color: #ffffff;
     font-size: 0.36rem;
