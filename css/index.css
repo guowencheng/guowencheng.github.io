@@ -15,7 +15,7 @@ select {
     outline-style: none;
     border: none;
     padding: 0.1rem 0;
-    /* background-color: #fff;   */
+    background-color: #fff;  
 }
 .my_select {
     /* -webkit-tap-highlight-color: rgba(255, 255, 255,0); */
@@ -25,7 +25,7 @@ select {
     appearance:none;
     outline-style: none;
     border: none;
-    /* background-color: #fff;   */
+    background-color: #fff;  
 }
 
 select::-ms-expand { 
