@@ -305,6 +305,7 @@ body {
 
 .load_form {
     height: 1rem;
+    line-height: 1rem;
     text-indent: 0.8rem;
 }
 
