@@ -208,7 +208,7 @@ input {
 }
 .form_Rlabel {
     display: inline-block;
-    top: 0.1rem;
+    top: 0.11rem;
     right: 0;
     width: 0.12rem;
     height: 0.28rem;
@@ -283,10 +283,9 @@ body {
 }
 .FI_person_info h2 span:first-child{
     display: inline-block;
-    left:3%;
-    top: 0.46rem;
     width: 0.1rem;
-    height: 0.36rem;
+    height: 0.4rem;
+    top: 0.4rem;
     background-color: #5488cf;
 }
 .FI_person_info h2 span:last-child{
@@ -379,11 +378,12 @@ body {
 }
 .MHI_SPtype .select_icon {
    padding-right: 0.34rem;
+   padding-top: 0.07rem;
     font-size: 0.32rem;
     color: #adadad;
 }
 .MHI_SPtype .form_Rlabel {
-    margin-top: 0.1rem;
+    margin-top: 0.07rem;
 }
 /* 服务 */
 .MHI_Ftitle {
