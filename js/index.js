@@ -1,7 +1,10 @@
 $(function () {
-    perINfo.init();
-
-    MHInsurance.init();
+    if ($(".filling_Info")) {
+        perINfo.init();
+    } 
+    if ($(".MHI")) {
+        MHInsurance.init();
+    }      
 });
 // 投保和被保人信息
 var perINfo = {
@@ -17,7 +20,11 @@ var perINfo = {
         });
         $(".select_icon").on("blur",function () {
             $(this).next(".form_Rlabel").toggleClass("trans90");
-        });          
+        });
+        // 页面跳转
+        $(".button_sub").on("click",function(){
+            window.location.href = "./MHInsurance.html"
+        })          
     },
     init: function () {
         this.clickEvens();
